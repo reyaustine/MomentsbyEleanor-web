@@ -292,7 +292,7 @@ main{
 
 .packages-container li{
     color: #fff;
-    padding: 0 10px;
+    margin: 0 10px;
     list-style: circle;
     line-height: 1.5rem;
     text-transform: uppercase;
