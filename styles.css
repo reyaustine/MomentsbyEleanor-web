@@ -7,7 +7,7 @@
 
 body{
     height: 100vh;
-    background-color: #ffffff;
+    background-color: rgba(252, 151, 131, 0.618);
      background-image: url('https://scontent.fceb6-1.fna.fbcdn.net/v/t39.30808-6/331582135_1375056989916959_8838552206411262538_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=730e14&_nc_eui2=AeEYBcwCPij537GDs8Jc0WQN3-WHjXivzZbf5YeNeK_NljyiWK1Wf2CXe2B6xKw4sJW8Gm5cv7X80m6LNgYkwYQI&_nc_ohc=FXQNFuzJVp0AX_guZz3&_nc_ht=scontent.fceb6-1.fna&oh=00_AfBkM32sAKMlsYU5OCKUpQf5_DxY6Zqr9p9aEy_jT8g0xA&oe=643D4970');
     /* background-image: url('https://fb.watch/jTs1XrwNgu/'); */
     background-size: cover;
@@ -25,7 +25,7 @@ a{
     font-size: 1rem;
 }
 a:hover{
-    color:rgba(244, 184, 73, 0.923);
+    color:rgba(252, 151, 131, 0.618);
 }
 /* HEADER */
 header{
@@ -145,26 +145,35 @@ main{
 }
 
 /* SERVICES */
+.services-title{
+    display: block;
+    text-align: center;
+    font-family: 'Dancing Script', cursive;
+    font-size: 2.3rem;
+    font-weight:900;
+    color: #fff;
+}
+
+
 .services-container{
-    margin-top: 13%;
+    margin-top: 3%;
     display:flex;
     justify-content: center;
     flex-wrap: wrap; 
- 
+    color: #fff;
 }
+
 .card{
-    background: Gray;
     width: 520px;
-    height: 500px;
     margin: 15px;
     flex-direction: column;
     border-radius: 15px;
+    background: rgba(0, 0, 0, 0.1);
 }
 
 .card-image{
-    background-color: aqua;
     height: 350px;
-    margin-bottom: 15px;
+    margin-bottom: 2%;
     background-size: cover;
     background-position: center;
     border-radius: 15px 15px 0;
@@ -184,8 +193,32 @@ main{
 .card-4{
     background-image: url('https://scontent.fceb6-1.fna.fbcdn.net/v/t39.30808-6/335307592_125114480367703_8187876993414499915_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=730e14&_nc_eui2=AeHgbIz9lRxRfQY0VnGQUogIG35bXrRL09EbfltetEvT0Yoj4Sold_HZe4rEnUnaufjxZ8TzWPz290ag7jLEiVPG&_nc_ohc=3rwBFtVsOwwAX9uQxeR&_nc_ht=scontent.fceb6-1.fna&oh=00_AfAGs55LIj-tBRHCVUc7kaIgiv4LNEEZrSTCo3ovZMnfaQ&oe=643D3344');
 }
- 
- 
+.card h2{
+    text-align: center;
+    font-family: 'Dancing Script', cursive;
+    font-size: ;
+}
+.card p{
+    padding:1% 5% 3%;
+}
+.card a{
+    border-radius: 15px;
+    padding: 15px 20px;
+    font-weight: bold;
+    background-color: rgba(246, 156, 117, 0.618);
+    display: block;
+    text-align: center;
+    color: #fff;
+    margin: 0 20% 3%;
+}
+.card a:hover{
+    scale: 1.05;
+    color: #fff;
+}
+.card a:active{
+    scale: 0.95;
+}
+
 
 
 
