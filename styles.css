@@ -149,6 +149,7 @@ main{
     margin-top: 15%;
     display:flex;
     justify-content: center;
+    flex-wrap: wrap; 
  
 }
 .card{
@@ -156,6 +157,7 @@ main{
     width: 420px;
     height: 600px;
     margin: 30px;
+    flex-direction: column;
 }
 
 .card-image{
@@ -227,4 +229,9 @@ main{
         left: 2rem;
         width: unset;
     }
+    .card {
+        flex-direction: row;
+      }
+
+    
 }
