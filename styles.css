@@ -196,6 +196,16 @@ main{
 .card-4{
     background-image: url('https://scontent.fceb6-1.fna.fbcdn.net/v/t39.30808-6/335307592_125114480367703_8187876993414499915_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=730e14&_nc_eui2=AeHgbIz9lRxRfQY0VnGQUogIG35bXrRL09EbfltetEvT0Yoj4Sold_HZe4rEnUnaufjxZ8TzWPz290ag7jLEiVPG&_nc_ohc=3rwBFtVsOwwAX9uQxeR&_nc_ht=scontent.fceb6-1.fna&oh=00_AfAGs55LIj-tBRHCVUc7kaIgiv4LNEEZrSTCo3ovZMnfaQ&oe=643D3344');
 }
+.card-5{
+    background-image: url('https://scontent.fmnl4-2.fna.fbcdn.net/v/t1.6435-9/87060646_1189432634585084_6380014802554585088_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=0debeb&_nc_eui2=AeEqGUfSNf38wO3q5xUwM5HiAXZb7P4iuS0Bdlvs_iK5LVfjCyR6KblbhUPZQFo8wZYF2AFLxT2ZRhDzJsAEMEGj&_nc_ohc=6-WkegdG4FYAX8r9vBS&_nc_ht=scontent.fmnl4-2.fna&oh=00_AfCLr4aOuDKe9_6Vkh-YJiztaK-XJ_cCPIdPn-FdyQRr2A&oe=645F82B4');
+}
+.card-6{
+    background-image: url('https://scontent.fmnl4-1.fna.fbcdn.net/v/t39.30808-6/329955038_3022099604759695_9222540243219282182_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=0debeb&_nc_eui2=AeEu3KHXUAm4ar82VYFgj8a0ZzVOtPWv5sdnNU609a_mx0MQrIXjRYXhvaUKUfGICceMz1_y4OtDv3apbfnM8e4_&_nc_ohc=w9zvoh48LcwAX8-vyNV&_nc_ht=scontent.fmnl4-1.fna&oh=00_AfCyN5FqdJDyycs56yd1EbcHT_brAKYXJsUJQppeIRXMbQ&oe=643D6AF9');
+}
+
+
+
+
 .card h2{
     text-align: center;
     font-family: 'Dancing Script', cursive;
@@ -223,20 +233,30 @@ main{
 }
 
 /* END OF SERVICES */
+
+
+/* Packages */
 .div-packages{
     width: 100%; 
     display: flex;
     justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;
+    color: #fff;
     
 }
 .packages-container{
     border-radius: 15px;
     max-width: 550px;
     padding:10px;
-    border:  3px solid chocolate;
+    border:  3px solid #fff;
     margin: 10px auto;
+    height: 600px;
+}
+
+.packages-container .heading{
+    margin: 3px;
+    line-height: 1.5rem;
 }
 
 .packages-container img {
@@ -260,15 +280,23 @@ main{
     margin: 10px 0;
 }
 .packages-container a {
-    display: inline-block;
-    background: crimson;
+    display: block;
+    text-align: center;
+    margin: 1rem 5rem;
+    background-color: orange;
     color: #fff;
     text-decoration: none;
     padding: 10px 20px;
+    
 }
 
-
-/* Packages */
+.packages-container li{
+    color: #fff;
+    padding: 0 10px;
+    list-style: circle;
+    line-height: 1.5rem;
+    text-transform: uppercase;
+}
 
 
 
