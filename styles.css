@@ -146,7 +146,7 @@ main{
 
 /* SERVICES */
 .services-container{
-    margin-top: 15%;
+    margin-top: 13%;
     display:flex;
     justify-content: center;
     flex-wrap: wrap; 
@@ -154,9 +154,9 @@ main{
 }
 .card{
     background: Gray;
-    width: 420px;
-    height: 600px;
-    margin: 30px;
+    width: 520px;
+    height: 500px;
+    margin: 15px;
     flex-direction: column;
 }
 
