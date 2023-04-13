@@ -4,17 +4,22 @@
     box-sizing: border-box;
     font-family:'Open Sans', sans-serif;
 }
-
-body{
+.div-hero-and-nav{
     height: 100vh;
-    background-color: rgba(252, 151, 131, 0.618);
+
      background-image: url('https://scontent.fceb6-1.fna.fbcdn.net/v/t39.30808-6/331582135_1375056989916959_8838552206411262538_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=730e14&_nc_eui2=AeEYBcwCPij537GDs8Jc0WQN3-WHjXivzZbf5YeNeK_NljyiWK1Wf2CXe2B6xKw4sJW8Gm5cv7X80m6LNgYkwYQI&_nc_ohc=FXQNFuzJVp0AX_guZz3&_nc_ht=scontent.fceb6-1.fna&oh=00_AfBkM32sAKMlsYU5OCKUpQf5_DxY6Zqr9p9aEy_jT8g0xA&oe=643D4970');
     /* background-image: url('https://fb.watch/jTs1XrwNgu/'); */
-    background-size: cover;
+    background-size: cover ;
     background-repeat: no-repeat;
     background-position: center;
     
 }
+
+body{
+    background-color: rgba(252, 151, 131, 0.618);
+
+}
+
 
 li{
     list-style: none;
@@ -28,11 +33,7 @@ a:hover{
     color:rgba(252, 151, 131, 0.618);
 }
 /* HEADER */
-header{
-    position: relative;
-    
 
-}
 .navbar{
     padding: 0 2rem;
     width: 100%;
@@ -49,24 +50,20 @@ header{
     font-size: 2rem;
     font-weight:600;
 }
-
 .navbar a {
     font-size: 1rem;
     font-weight: bold;
 }
-
 .navbar .links{
     display: flex;
     gap: 2rem;
 }
-
 .navbar .toggle_btn{
     color: #fff;
     font-size: 1.5rem;
     cursor: pointer;
     display: none;
 }
-
 .action_btn{
     background-color: orange;
     color: #fff;
@@ -78,16 +75,13 @@ header{
     font-weight: bold;
     cursor: pointer;
 }
-
 .action_btn:hover{
     scale: 1.05;
     color: #fff;
 }
-
 .action_btn:active{
     scale: 0.95;
 }
-
 /* DROPDOWN */
 .dropdown_menu{
     display: none;
@@ -105,7 +99,6 @@ header{
 .dropdown_menu.open{
     height: 240px;
 }
-
 .dropdown_menu li{
     padding: 0.7rem;
     display: flex;
@@ -127,7 +120,7 @@ header{
     text-align: center;
     color: #fff;
     /* Put GAP between next section */
-    margin-bottom: 5%; 
+    /* margin-bottom: 5%;  */
 }
 #hero h1{
     font-family: 'Dancing Script', cursive;
@@ -143,20 +136,28 @@ header{
 main{
     margin-bottom: 1rem;
 }
-
 /* SERVICES */
-.services-title{
+
+.div-services{
+    padding: 3% 0;
     display: block;
     text-align: center;
+    line-height: 1.5;
+
+}
+
+.section-title{
+    text-align: center;
     font-family: 'Dancing Script', cursive;
-    font-size: 2.3rem;
+    font-size: 3rem;
     font-weight:900;
     color: #fff;
+    margin: 20px 0;
 }
 
 
 .services-container{
-    margin-top: 3%;
+
     display:flex;
     justify-content: center;
     flex-wrap: wrap; 
@@ -196,7 +197,7 @@ main{
 .card h2{
     text-align: center;
     font-family: 'Dancing Script', cursive;
-    font-size: ;
+    font-size: 2.3rem;
 }
 .card p{
     padding:1% 5% 3%;
@@ -219,25 +220,101 @@ main{
     scale: 0.95;
 }
 
-
-
-
-
-
-/* ABOUT */
-#about{
-    height: 50vh;
-
-}
-
-.image-eleanor{
-    border-radius: 100%;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 30%;
+/* END OF SERVICES */
+.div-packages{
+    width: 100%; 
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
     
 }
+.packages-container{
+    border-radius: 15px;
+    max-width: 550px;
+    padding:10px;
+    border:  3px solid chocolate;
+    margin: 10px auto;
+}
+
+.packages-container img {
+    
+    max-width: 100%;
+    height: 300px;
+    display: block;
+    object-fit: cover;
+    padding: 5px;
+}
+.packages-container .heading, .packages-container .text {
+    width: 100%;
+    padding: 0 5px;
+    min-width: 300px;
+}
+
+.packages-container h2, .packages-container h4 {
+    text-transform: uppercase;
+}
+.packages-container p {
+    margin: 10px 0;
+}
+.packages-container a {
+    display: inline-block;
+    background: crimson;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+}
+
+
+/* Packages */
+
+
+
+
+/* End of Packages */
+
+/* ABOUT */
+
+.about-container{
+    padding: 2rem 0;
+    /* background-image: url('https://scontent-sin6-2.xx.fbcdn.net/v/t39.30808-6/316178041_1945119215683085_7010840091321983141_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=730e14&_nc_eui2=AeG8RDxm7zcAMbf813khoPg4C2I3aoxB0y4LYjdqjEHTLmqmsK42Bd06x9xCdmKNpl_pUy1eJClnkybFTbcOax7X&_nc_ohc=jQ9rkHPrSbwAX9IXXex&_nc_oc=AQlGU94d8OsrGRSVPnizM0nOLdPNB8ELiSj6vvccszQ3OZOGqqPC16S3tuloODMvElY&_nc_ht=scontent-sin6-2.xx&oh=00_AfBHCDvJuHA0PfEz9EFrGs0Ec1z3fDaJMNsVUSvdI3ZeJg&oe=643D87E8'); */
+    background-size: cover;
+    background-color: rgba(252, 151, 131, 0.618);
+    color: #fff;
+    display:flex;
+    text-align: center;
+    justify-content: center;
+    flex-wrap: wrap; 
+    flex-direction: column;
+    line-height: 1.5;
+}
+
+.about-box{
+    background-color: rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    margin: 0 15%;
+}
+
+.about-container  p {
+    padding: 15px 20%;
+    
+}
+
+.about-image-container{
+    margin: 12px 0;
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    align-content: center;    
+    margin-left: auto;
+    margin-right: auto;
+}
+.image-eleanor{
+    border-radius: 100%;
+    max-width: 100%;
+    max-height: 100%;
+}
+/* END OF ABOUT */
 
 
 
@@ -254,6 +331,10 @@ main{
     .dropdown_menu{
         display: block;
     }
+    .div-packages{
+       
+    }
+
 }
 
 @media(max-width:568px){
