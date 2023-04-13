@@ -12,9 +12,9 @@
     <link rel="stylesheet" href="styles.css">
     <title>Moments by Eleanor</title>
 </head>
-<body>
+<body id="home">
 <!-- Hero and Nav  -->
-<div id="home" class="div-hero-and-nav">
+<div  class="div-hero-and-nav">
     <header>
         <div class="navbar">
             <div class="logo"><a class="logo" href="#">Moments by Eleanor</a></div>
@@ -29,12 +29,12 @@
         <div class="toggle_btn"><i class="fa-solid fa-bars"></i></div>
         </div>
         <div class="dropdown_menu">
-            <li><a href="#home">Home</a></li>
-            <li><a href="#services">Services</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#packages">Packages</a></li>
-            <li><a href="#contact">Contact</a></li>
-            <li><a href="tel:+639171134634" class="action_btn">Call (+63) 917-113-463</a></li>
+            <li><a  href="#">Home</a></li>
+            <li><a  href="#services">Services</a></li>
+            <li><a  href="#about">About</a></li>
+            <li><a  href="#packages">Packages</a></li>
+            <li><a  href="#contact">Contact</a></li>
+            <li><a  href="tel:+639171134634" class="action_btn">Call (+63) 917-113-4634</a></li>
             
         </div>
     </header>
@@ -176,14 +176,26 @@
 
     <script>
         const toggleBtn = document.querySelector('.toggle_btn')
+        const toggleBtna = document.querySelector('.toggle_btn li, .toggle_btn a')
         const toggleBtnIcon = document.querySelector('.toggle_btn i')
         const dropDownMenu = document.querySelector('.dropdown_menu')
-        toggleBtn.onclick = function (){
+            
+            toggleBtn.onclick = function (){
             dropDownMenu.classList.toggle('open')
             const isOpen = dropDownMenu.classList.contains('open')
-            toggleBtnIcon.classList = isOpen
-            ? 'fa-solid fa-xmark' : 'fa-solid fa-bars'
-        }
+            toggleBtnIcon.classList = isOpen ? 'fa-solid fa-xmark' : 'fa-solid fa-bars'
+            }
+
+            const dropdownLinks = document.querySelectorAll('.dropdown_menu a[href]');
+            dropdownLinks.forEach(function(el) {
+            el.addEventListener('click', function() {
+                dropDownMenu.classList.remove('open');
+                toggleBtnIcon.classList = 'fa-solid fa-bars';
+            });
+            });
+          
+         
+            
 
     </script>
 </body>
