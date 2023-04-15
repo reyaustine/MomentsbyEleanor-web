@@ -17,9 +17,7 @@
 
 body{
     background-color: rgba(252, 151, 131, 0.618);
-
 }
-
 
 li{
     list-style: none;
@@ -33,7 +31,6 @@ a:hover{
     color:rgba(252, 151, 131, 0.618);
 }
 /* HEADER */
-
 .navbar{
     position: fixed;
     padding: 0 2rem;
@@ -139,7 +136,6 @@ main{
     margin-bottom: 1rem;
 }
 /* SERVICES */
-
 .div-services{
     padding: 3% 0;
     display: block;
@@ -173,7 +169,6 @@ main{
     border-radius: 15px;
     background: rgba(0, 0, 0, 0.1);
 }
-
 .card-image{
     height: 350px;
     margin-bottom: 2%;
@@ -181,18 +176,15 @@ main{
     background-position: center;
     border-radius: 15px 15px 0;
 }
-
 .card-1{
     background-image: url('https://scontent.fceb6-1.fna.fbcdn.net/v/t39.30808-6/322372187_704885497819883_3315172944923744691_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=730e14&_nc_eui2=AeE1O1WZTnmLcORHfjpWi8ADRNqAybVigotE2oDJtWKCizDcdr1RF6vF0cneP4zsjLIrVRh6D4N59hThzR4g5yuN&_nc_ohc=lqB1gw-OiWwAX_m2bk9&_nc_ht=scontent.fceb6-1.fna&oh=00_AfBJRMr5VPYyZIqRk3xvS_l9KinjiIRdNzQp2pM4XJGiiQ&oe=643DB7B8');
 }
 .card-2{
     background-image: url('https://scontent.fceb6-1.fna.fbcdn.net/v/t39.30808-6/317940962_1955932791268394_8345288214405042037_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=730e14&_nc_eui2=AeHM5keDVzEWsRtecInoWJDEZIgs1x51z6xkiCzXHnXPrH8ayNQFIfYhizuGT31ZZ2qm6dn7oLxEuYzAU6jFu5X4&_nc_ohc=mYHSXVXSe2cAX9nsQ1G&_nc_ht=scontent.fceb6-1.fna&oh=00_AfBxHfOteahhPACoOh9lULoDIPREWOjaDqsSx5OBx3MZlQ&oe=643C8F44');
 }
- 
 .card-3{
     background-image: url('https://scontent.fceb6-1.fna.fbcdn.net/v/t39.30808-6/335313929_219342213983480_7115832063317512734_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=730e14&_nc_eui2=AeGZNlR0Q6zsPDG-3bXfZ7mSbinZEyQwD_huKdkTJDAP-CvW0vumjwY2sGMCWQyCSMXlEmAXYiztHIuPaR5GNpIH&_nc_ohc=cDmmhIacyl8AX--_IEB&_nc_ht=scontent.fceb6-1.fna&oh=00_AfCHzRjWy4ELDSHpDI_w-G91YtmX2og5FNbLCJQsISrpkA&oe=643BF517');
-}
- 
+} 
 .card-4{
     background-image: url('https://scontent.fceb6-1.fna.fbcdn.net/v/t39.30808-6/335307592_125114480367703_8187876993414499915_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=730e14&_nc_eui2=AeHgbIz9lRxRfQY0VnGQUogIG35bXrRL09EbfltetEvT0Yoj4Sold_HZe4rEnUnaufjxZ8TzWPz290ag7jLEiVPG&_nc_ohc=3rwBFtVsOwwAX9uQxeR&_nc_ht=scontent.fceb6-1.fna&oh=00_AfAGs55LIj-tBRHCVUc7kaIgiv4LNEEZrSTCo3ovZMnfaQ&oe=643D3344');
 }
@@ -202,10 +194,6 @@ main{
 .card-6{
     background-image: url('https://scontent.fmnl4-1.fna.fbcdn.net/v/t39.30808-6/329955038_3022099604759695_9222540243219282182_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=0debeb&_nc_eui2=AeEu3KHXUAm4ar82VYFgj8a0ZzVOtPWv5sdnNU609a_mx0MQrIXjRYXhvaUKUfGICceMz1_y4OtDv3apbfnM8e4_&_nc_ohc=w9zvoh48LcwAX8-vyNV&_nc_ht=scontent.fmnl4-1.fna&oh=00_AfCyN5FqdJDyycs56yd1EbcHT_brAKYXJsUJQppeIRXMbQ&oe=643D6AF9');
 }
-
-
-
-
 .card h2{
     text-align: center;
     font-family: 'Dancing Script', cursive;
@@ -237,20 +225,20 @@ main{
 
 /* Packages */
 .div-packages{
-    width: 100%; 
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
     flex-wrap: wrap;
     color: #fff;
-    
+    margin-bottom: 3%;
+    padding: 0 0rem;
 }
 .packages-container{
     border-radius: 15px;
     max-width: 550px;
-    padding:10px;
+    padding: 1rem 1rem;
     border:  3px solid #fff;
-    margin: 10px auto;
+    margin: 2% 1rem;
     height: 600px;
 }
 
@@ -260,7 +248,6 @@ main{
 }
 
 .packages-container img {
-    
     max-width: 100%;
     height: 300px;
     display: block;
@@ -287,29 +274,66 @@ main{
     color: #fff;
     text-decoration: none;
     padding: 10px 20px;
-    
 }
 
 .packages-container li{
     color: #fff;
-    margin: 0 10px;
+    margin: 0 20px;
     list-style: circle;
     line-height: 1.5rem;
     text-transform: uppercase;
+}
+/* End of Packages */
+
+/* MYOP-INDEX */
+.myop-div{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    background-color: rgba(252, 151, 131, 0.618);
+    padding: 4% 2.5rem;
+}
+.myop-div-container{
+    height: auto;
+}
+.myop-container h2 {
+    color: #fff;
+    
+    font-family: 'Dancing Script', cursive;
+    font-size: 3rem;
+}
+.myop-header{
+    border-radius: 15px;
+    background-color: orange;
+    text-align: center;
+    color: #fff;
+    font-family: 'Dancing Script', cursive;
+    padding: 3% 0;
+    margin: 3% 5rem 0;  
+}
+.myop-header i, .myop-header a {
+    padding: 0 3%;
+    color: #fff;
+    font-size: 24px;
+}
+.myop-header:hover{
+    scale: 1.05;
+    color: #fff;
+}
+.myop-header:active {
+    scale: 0.95;
 }
 
 
 
 
-/* End of Packages */
+/* END-of-MYOP */
 
 /* ABOUT */
 
 .about-container{
     padding: 2rem 0;
-    /* background-image: url('https://scontent-sin6-2.xx.fbcdn.net/v/t39.30808-6/316178041_1945119215683085_7010840091321983141_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=730e14&_nc_eui2=AeG8RDxm7zcAMbf813khoPg4C2I3aoxB0y4LYjdqjEHTLmqmsK42Bd06x9xCdmKNpl_pUy1eJClnkybFTbcOax7X&_nc_ohc=jQ9rkHPrSbwAX9IXXex&_nc_oc=AQlGU94d8OsrGRSVPnizM0nOLdPNB8ELiSj6vvccszQ3OZOGqqPC16S3tuloODMvElY&_nc_ht=scontent-sin6-2.xx&oh=00_AfBHCDvJuHA0PfEz9EFrGs0Ec1z3fDaJMNsVUSvdI3ZeJg&oe=643D87E8'); */
     background-size: cover;
-    background-color: rgba(252, 151, 131, 0.618);
     color: #fff;
     display:flex;
     text-align: center;
