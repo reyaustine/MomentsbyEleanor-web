@@ -22,10 +22,8 @@
             <div class="logo"><a class="logo" href="index.html">Moments by Eleanor</a></div>
         <ul class="links">
             <li><a href="index.html">Home</a></li>
-            <li><a href="#services">Services</a></li>
             <li><a href="#packages">Packages</a></li>
             <li><a href="#">Create Own Package</a></li>
-            <li><a href="#about">About</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
         <a href="tel:+639171134634" class="action_btn">Call (+63) 917-113-4634</a>
@@ -33,16 +31,14 @@
         </div>
         <div class="dropdown_menu">
             <li><a  href="index.html">Home</a></li>
-            <li><a  href="#services">Services</a></li>
             <li><a  href="#packages">Packages</a></li>
             <li><a href="#">Create Own Package</a></li>
-            <li><a href="#about">About</a></li>
             <li><a  href="#contact">Contact</a></li>
             <li><a  href="tel:+639171134634" class="action_btn">Call (+63) 917-113-4634</a></li>
             
         </div>
     </header>
-
+<!-- HERO -->
     <main>
         <secion id="hero">
             <h1 class="hero-welcome">
@@ -55,7 +51,41 @@
     </main>
 </div>
     
+<!-- FORM -->
+<div class="container">
+    <div class="heading">Please complete each item on this form and click submit. Form must be received within one week of a verbal rental request to secure a reservation. This form must be filled out completely to be accepted.  
+        The event shall not be confirmed until a signed lease agreement is executed by the College.</div>
+    <div class="row">
+        <form action="#">
+            <label for="fullName">Full Name</label>
+            <input type="text" id="fullName" name="fullName">
+            <label for="contactNumber">Contact Number:</label>
+            <input type="tel" id="contactNumber" name="contactNumber">
+            <label for="clientAddress">Your Address:</label>
+            <input type="text" id="clientAddress" name="clientAddress"><br>
+            <label for="eventName">Event Name:</label>
+            <input type="text" id="eventName" name="eventName">
+            <label for="event_date_time">Event Date & Time:</label>
+            <input type="datetime-local" id="event_date_time" name="event_date_time" required>
 
+            <fieldset id="eventType">
+                <legend>Event Type</legend>
+                <p><label class="choice"> <input type="radio" name="eventType" required value="car"> Wedding </label></p>
+                <p><label class="choice"> <input type="radio" name="eventType" required value="van"> Debut </label></p>
+                <p><label class="choice"> <input type="radio" name="eventType" required value="tuktuk"> Kiddie Party </label></p>
+                <p><label class="choice"> <input type="radio" name="eventType" required value="van"> Baptism </label></p>
+                <p><label class="choice"> <input type="radio" name="eventType" required value="tuktuk"> Corporate </label></p>
+                <p><label class="choice"> <input type="radio" name="eventType" required value="tuktuk"> Wedding Proposal </label></p>
+                <p><label class="choice"> <input type="radio" name="eventType" required value="tuktuk"> Surprise Birthday </label></p>
+                <p><label class="choice"> <input type="radio" name="eventType" required value="tuktuk"> Others </label></p>
+            </fieldset>
+
+
+
+        </form>
+    </div>
+
+</div>
 
 
 
