@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="styles/fa/fontawesome.min.css">
+    
+   <!-- GoogleFont -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/styles/myop.css">
+    <title>Moments by Eleanor</title>
+</head>
+<body id="home">
+<!-- Hero and Nav  -->
+<div  class="div-hero-and-nav">
+    <header>
+        <div class="navbar">
+            <div class="logo"><a class="logo" href="index.html">Moments by Eleanor</a></div>
+        <ul class="links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#packages">Packages</a></li>
+            <li><a href="#">Create Own Package</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <a href="tel:+639171134634" class="action_btn">Call (+63) 917-113-4634</a>
+        <div class="toggle_btn"><i class="fa-solid fa-bars"></i></div>
+        </div>
+        <div class="dropdown_menu">
+            <li><a  href="index.html">Home</a></li>
+            <li><a  href="#services">Services</a></li>
+            <li><a  href="#packages">Packages</a></li>
+            <li><a href="#">Create Own Package</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a  href="#contact">Contact</a></li>
+            <li><a  href="tel:+639171134634" class="action_btn">Call (+63) 917-113-4634</a></li>
+            
+        </div>
+    </header>
+
+    <main>
+        <secion id="hero">
+            <h1 class="hero-welcome">
+                Create your own package
+            </h1>
+            <p>
+               Let us help you create a package that suits your budget.
+            </p>
+        </secion>
+    </main>
+</div>
+    
+
+
+
+
+
+<!-- About -->
+    <footer>
+        <div id="contact" class="contact-div">
+     
+            <div class="contact-container ">
+                <div class="footer-infos">
+                    <div class="footer-links">
+                        <h3>Follow Us</h3>
+                        <ul class="social-media">
+                            <li><a class="fb" href="#"><i class="fa-brands fa-facebook"></i>www.facebook.com/MomentsbyEleanor</a></li>
+                            <li><a href="#"><i class="fa-brands fa-instagram"></i>@eleanurdute</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+                <div class="contact-container">
+                    <div class="contact-form">
+                        <h3>Contact Us</h3>
+                        <form method="post" action="#">
+                            <label for="name">Full Name:</label>
+                            <input type="text" id="name" name="name" required><br><br>
+                
+                            <label for="email">Email:</label>
+                            <input type="email" id="email" name="email"><br><br>
+                
+                            <label for="number">Mobile/Landline:</label>
+                            <input type="tel" id="number" name="number" required><br><br>
+                
+                            <label for="message">Message:</label>
+                            <textarea id="message" name="message" rows="5" cols="30" required></textarea><br><br>
+                
+                            <input class="submit" type="submit" value="Submit">
+                        </form>
+                    </div>
+                </div>
+          
+            
+
+        </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 Moments by Eleanor. All rights reserved.</p>
+            </div>
+    </footer>
+
+
+
+
+    <script>
+        const toggleBtn = document.querySelector('.toggle_btn')
+        const toggleBtna = document.querySelector('.toggle_btn li, .toggle_btn a')
+        const toggleBtnIcon = document.querySelector('.toggle_btn i')
+        const dropDownMenu = document.querySelector('.dropdown_menu')
+            
+            toggleBtn.onclick = function (){
+            dropDownMenu.classList.toggle('open')
+            const isOpen = dropDownMenu.classList.contains('open')
+            toggleBtnIcon.classList = isOpen ? 'fa-solid fa-xmark' : 'fa-solid fa-bars'
+            }
+
+            const dropdownLinks = document.querySelectorAll('.dropdown_menu a[href]');
+            dropdownLinks.forEach(function(el) {
+            el.addEventListener('click', function() {
+                dropDownMenu.classList.remove('open');
+                toggleBtnIcon.classList = 'fa-solid fa-bars';
+            });
+            });
+    </script>
+</body>
+</html>
