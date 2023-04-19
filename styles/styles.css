@@ -5,7 +5,7 @@
     font-family:'Open Sans', sans-serif;
 }
 .div-hero-and-nav{
-    height: 100vh;
+    height: 100%;
     background-image: url('/images/hero-wedding-1.jpeg');
     /* background-image: url('https://fb.watch/jTs1XrwNgu/'); */
     background-attachment: fixed;
