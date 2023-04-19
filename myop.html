@@ -57,29 +57,63 @@
         The event shall not be confirmed until a signed lease agreement is executed by the College.</div>
     <div class="row">
         <form action="#">
-            <label for="fullName">Full Name</label>
-            <input type="text" id="fullName" name="fullName">
-            <label for="contactNumber">Contact Number:</label>
-            <input type="tel" id="contactNumber" name="contactNumber">
-            <label for="clientAddress">Your Address:</label>
-            <input type="text" id="clientAddress" name="clientAddress"><br>
-            <label for="eventName">Event Name:</label>
-            <input type="text" id="eventName" name="eventName">
+            <input type="text" id="fullName" name="fullName" placeholder="Full Name">
+            <input type="tel" id="contactNumber" name="contactNumber" placeholder="Contact Number">
+            <input type="text" id="clientAddress" name="clientAddress" placeholder="Address"><br>
+            <input type="text" id="eventName" name="eventName" placeholder="Event Name or Title">
             <label for="event_date_time">Event Date & Time:</label>
             <input type="datetime-local" id="event_date_time" name="event_date_time" required>
 
             <fieldset id="eventType">
                 <legend>Event Type</legend>
-                <p><label class="choice"> <input type="radio" name="eventType" required value="car"> Wedding </label></p>
-                <p><label class="choice"> <input type="radio" name="eventType" required value="van"> Debut </label></p>
-                <p><label class="choice"> <input type="radio" name="eventType" required value="tuktuk"> Kiddie Party </label></p>
-                <p><label class="choice"> <input type="radio" name="eventType" required value="van"> Baptism </label></p>
-                <p><label class="choice"> <input type="radio" name="eventType" required value="tuktuk"> Corporate </label></p>
-                <p><label class="choice"> <input type="radio" name="eventType" required value="tuktuk"> Wedding Proposal </label></p>
-                <p><label class="choice"> <input type="radio" name="eventType" required value="tuktuk"> Surprise Birthday </label></p>
-                <p><label class="choice"> <input type="radio" name="eventType" required value="tuktuk"> Others </label></p>
+                <p><label class="choice"> <input type="radio" name="eventType" required value="Wedding"> Wedding </label></p>
+                <p><label class="choice"> <input type="radio" name="eventType" required value="Debut"> Debut </label></p>
+                <p><label class="choice"> <input type="radio" name="eventType" required value="Kiddie Party"> Kiddie Party </label></p>
+                <p><label class="choice"> <input type="radio" name="eventType" required value="Baptism"> Baptism </label></p>
+                <p><label class="choice"> <input type="radio" name="eventType" required value="Corporate"> Corporate </label></p>
+                <p><label class="choice"> <input type="radio" name="eventType" required value="Wedding Proposal"> Wedding Proposal </label></p>
+                <p><label class="choice"> <input type="radio" name="eventType" required value="Surprise Birthday"> Surprise Birthday </label></p>
+                <p><label class="choice"> <input type="radio" name="eventType" required value=""> Others <input type="text" id="eventTypeOthers" name="eventTypeOthers" placeholder=""></label></p>
             </fieldset>
 
+            <p>
+                <label>Venue
+                <select id="event_venue" name="event_venue">
+                <option value="" selected="selected">Select One</option>
+                <option value="Bayfront Hotel Cebu - NRA" >Bayfront Hotel Cebu - NRA</option>
+                <option value="Bayfront Hotel Cebu - Capitol Site" >Bayfront Hotel Cebu - Capitol Site</option>
+                <option value="Waterfront Hotel & Casino" >Waterfront Hotel & Casino</option>
+                <option value="Cebu Parklane Hotel" >Cebu Parklane Hotel</option>
+                <option value="Quest Hotel" >Quest Hotel</option>
+                <option value="One Central Hotel" >One Central Hotel</option>
+                <option value="Seda Hotel Ayala" >Seda Hotel Ayala</option>
+                <option value="BE Resort Mactan" >BE Resort Mactan</option>
+                <option value="Chateau by the Sea Mactan" >Chateau by the Sea Mactan</option>
+                <option value="The Events Space" >The Events Space</option>
+                <option value="Beverly View" >Beverly View Pavillion</option>
+                <option value="Oakridge Pavillion" >Oakridge Pavillion</option>
+                <option value="Circa 1900" >Circa 1900</option>
+                <option value="Heartland Estate(Red Carpet)" >Heartland Estate(Red Carpet)</option>
+                <option value="Skyhall SM Seaside" >Skyhall SM Seaside</option>
+                <option value="Cebu TradeHall SM Cebu" >Cebu TradeHall SM Cebu</option>
+                <option value="Casino Español de Cebu" >Casino Español de Cebu</option>
+                <option value="Others" >Others</option>
+
+                </select>
+                </label> 
+                </p>
+
+
+
+           <fieldset id="no_pax">
+                <legend>Event Type</legend>
+                <p><label class="choice"> <input type="radio" name="no_pax" required value="30"> 30 </label></p>
+                <p><label class="choice"> <input type="radio" name="no_pax" required value="60"> 60 </label></p>
+                <p><label class="choice"> <input type="radio" name="no_pax" required value="120"> 120 </label></p>
+                <p><label class="choice"> <input type="radio" name="no_pax" required value="150"> 150 </label></p>
+                <p><label class="choice"> <input type="radio" name="no_pax" required value="200"> 200 </label></p>
+                <p><label class="choice"> <input type="radio" name="no_pax" required value=""> <input type="text" id="eventTypeOthers" name="eventTypeOthers" placeholder="Custom number"></label></p>
+            </fieldset>
 
 
         </form>

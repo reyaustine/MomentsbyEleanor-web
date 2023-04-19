@@ -5,7 +5,7 @@
     font-family:'Open Sans', sans-serif;
 }
 .div-hero-and-nav{
-    height: 100%;
+    height: 100vh;
     background-image: url('/images/hero-wedding-1.jpeg');
     /* background-image: url('https://fb.watch/jTs1XrwNgu/'); */
     background-attachment: fixed;
@@ -13,6 +13,7 @@
     background-repeat: no-repeat;
     background-size: cover;
 }
+
 
 
 body{
@@ -438,6 +439,8 @@ font-family: 'Dancing Script', cursive;
 
 /* RESPONSIVE */
 @media(max-width:992px){
+    
+
     .navbar .links,
     .navbar .action_btn {
         display: none;
@@ -454,6 +457,13 @@ font-family: 'Dancing Script', cursive;
 }
 
 @media(max-width:568px){
+    .div-hero-and-nav{
+        background: url('/images/hero-wedding-1\ copy.jpeg');
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
     .navbar .logo a {
         font-size: 1.3rem;
     }
@@ -477,6 +487,10 @@ font-family: 'Dancing Script', cursive;
     .myop-container h2{
         font-size: 2rem;
     }
+  
+}
+@media(max-width:468px){
+   
  
   
 }

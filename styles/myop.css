@@ -271,6 +271,15 @@ font-family: 'Dancing Script', cursive;
 }
 
 @media(max-width:568px){
+    .div-hero-and-nav{
+        background: url('/images/myop-hero-3\ copy.jpeg');
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        
+    }
+
     .navbar .logo a {
         font-size: 1.3rem;
     }
